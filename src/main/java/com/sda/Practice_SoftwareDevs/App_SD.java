@@ -29,58 +29,9 @@ public class App_SD {
 		softwareDevelopers.add(devsTest.developer4);
 		softwareDevelopers.add(devsTest.developer5);
 
+		fetcher.getAllDevsWithJava(softwareDevelopers);
+		fetcher.printDevsToFile(softwareDevelopers);
 
 
-		List<SoftwareDeveloper> devsJava = fetcher.getAllDevsWithJava(softwareDevelopers);
-		List<SoftwareDeveloper> devsJS = fetcher.getAllDevsWithJavaScript(softwareDevelopers);
-		System.out.println("Devs JAVA");
-		fetcher.printTheList(devsJava);
-
-		System.out.println("\n DEVS JS");
-		fetcher.printTheList(devsJS);
-
-
-
-
-//		for (int i = 0; i < softwareDevelopers.size(); i++) {
-//
-//			if(softwareDevelopers.get(i).getKnownLanguages().contains("java")) {
-//				devsWithJava.add(softwareDevelopers.get(i));
-//			}
-//		}
-//		System.out.println("Devs with Java");
-//		for (int i = 0; i < devsWithJava.size(); i++) {
-//			System.out.println(devsWithJava.get(i).getName() + " " +  devsWithJava.get(i).getAge());
-//		}
-
-//		Stream.of(devsWithJava).forEach(System.out::println);
-
-
-		System.out.println("--------------------");
-
-
-		Set<String> allLanguages = fetcher.getAllKnownLanguages(softwareDevelopers);
-
-		Stream.of(allLanguages).forEach(System.out::println);
-
-		Set<String> allLanguagesStartwithJ = fetcher.getAllLanguagesStartwithJ(softwareDevelopers);
-
-		Stream.of(allLanguagesStartwithJ).forEach(System.out::println);
-
-
-
-
-//		for (String language : devsTest.developer1.getKnownLanguages())
-//			System.out.println(language);
-//
-//		devsTest.setLanguagesTomek();
-//		devsTest.setLanguagesBartek();
-//
-//		for (String language : devsTest.developer2.getKnownLanguages())
-//			System.out.println(devsTest.developer2.getName() + " " + language);
-//
-//		for (String language : devsTest.developer3.getKnownLanguages())
-//			System.out.println(devsTest.developer3.getName() + " " + language);
-//	}
 	}
 }

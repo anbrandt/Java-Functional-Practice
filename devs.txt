@@ -1,0 +1,5 @@
+Andrzej 37 [c#, java, javascript]
+Tomek 24 [heskel, scala, html]
+Bartek 29 [css, groovy, html, javascript]
+Alicja 22 [c#, heskel, css, groovy, java]
+Janusz 39 [css, java, scala, javascript, sql]
